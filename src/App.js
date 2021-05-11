@@ -1,6 +1,6 @@
 
 import './App.css';
-import Tile from './Tile.js';
+import Tile from './components/Tile';
 
 import React, { useEffect, useState } from "react";
 
