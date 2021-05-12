@@ -1,8 +1,10 @@
 
-import './App.css';
+import './styles/App.css';
+import './styles/navigation.css'
 import Tile from './components/Tile';
 
 import React, { useEffect, useState } from "react";
+import Navigation from './components/Navigation';
 
 //  let houses=[]
 // houses.push({price:27500,area:"Handsworth",type:"Flat",image:`https://media.rightmove.co.uk/dir/crop/10:9-16:9/108k/107051/78903606/107051_RS0730_IMG_11_0000_max_476x317.jpeg`})
@@ -28,6 +30,7 @@ const [houses, fillHouses] = useState([]);
   return (
   
     <div className="App">
+      <Navigation />
       <header className="App-header">
       {houses.map(
         h =>
