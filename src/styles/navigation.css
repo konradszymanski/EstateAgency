@@ -7,7 +7,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #3d5467;
   }
   
   li {
@@ -16,16 +16,16 @@ ul {
   
   li a {
     display: block;
-    color: white;
+    color: #f1edee;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #8aa29e;
   }
   
   .active {
-    background-color: #4CAF50;
+    background-color: #db5461;
   }

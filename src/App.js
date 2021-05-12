@@ -1,6 +1,6 @@
-
 import './styles/App.css';
 import './styles/navigation.css'
+import './styles/tile.css'
 import Tile from './components/Tile';
 
 import React, { useEffect, useState } from "react";
