@@ -32,13 +32,18 @@ function Appointment(props) {
     }
     if (isOpen) {
         return (
-            <div>
-                <label>Preferred date:</label><DatePicker id={`datePicker-${props.houseId}`} selected={startDate} onChange={date => setStartDate(date)} /><br />
-                <label>Preferred time:</label><input id={`time-${props.houseId}`} type='text'></input><br />
-                <label>Contact email:</label><input id={`email-${props.houseId}`} type='text'></input><br />
-                <label>Contact phone:</label><input id={`tel-${props.houseId}`} type='number'></input><br />
-                <label>Customer Name:</label><input id={`name-${props.houseId}`} type='text'></input><br />
-                <label>Notes/comments:</label><br /><textarea id={`msg-${props.houseId}`} rows="5" cols="40"></textarea><br />
+            <div className='requestForm'>
+                <label>Preferred date:</label><DatePicker id={`datePicker-${props.houseId}`} selected={startDate} onChange={date => setStartDate(date)} required /><br />
+                <label>Preferred time:</label>
+                    <input  id={`time-${props.houseId}`} type='text'></input><br />
+                <label>Contact email:</label>
+                    <input required id={`email-${props.houseId}`} type='text' ></input><br />
+                <label>Contact phone:</label>
+                    <input required id={`tel-${props.houseId}`} type='number'></input><br />
+                <label>Customer Name:</label>
+                    <input required id={`name-${props.houseId}`} type='text'></input><br />
+                <label>Notes/comments:</label><br />
+                    <textarea id={`msg-${props.houseId}`} rows="5" cols="40" ></textarea><br />
                 <button onClick={() => { setIsFormOpen(false); setIsBooked(true); sendSMS()}}>Submit</button>
             </div>
         );

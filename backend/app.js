@@ -28,6 +28,26 @@ houses.push({
   area: "Edgbaston", 
   type: "Maisonette", 
   image: `https://media.rightmove.co.uk/dir/crop/10:9-16:9/73k/72455/97846952/72455_107VC_IMG_00_0000_max_476x317.jpg` })
+
+houses.push({ 
+    id: 4, price: 67500, 
+    area: "Handsworth", 
+    type: "Maisonette", 
+    image: `https://lid.zoocdn.com/u/1024/768/1c4272472803ce4f74f88329429f2cbc45ced5d6.jpg:p` })
+  
+houses.push({ 
+    id: 5, 
+    price: 2450000, 
+    area: "Harbourne", 
+    type: "House", 
+    image: `https://lid.zoocdn.com/u/1024/768/2a76caf94af839747ab44e3df46445dafc3dab2d.jpg:p` })
+  
+houses.push({ 
+    id: 6, 
+    price: 265000, 
+    area: "Edgbaston", 
+    type: "House", 
+    image: `https://lid.zoocdn.com/u/1024/768/51253f1f97463cfedeaf931686ab73fa10cfd6f5.jpg:p` })
 //var bodyParser = require('body-parser')
 
 app.use(express.urlencoded({ extended: true }));

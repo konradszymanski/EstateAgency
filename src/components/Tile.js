@@ -3,30 +3,38 @@ import React, { useState } from "react";
 
 function Tile(props) {
 
-const [view, setView] = useState(true)
-if (view){
-    return ( 
-    <div className = "tile" >
-      
-        <h1> {props.houseId} {props.area} {props.price} {props.type}   </h1>
-
+  const [view, setView] = useState(true)
+  if (view) {
+    return (
+      <div className="tile" >
         <img
-        alt=''
-        src= {props.image}
+          alt=''
+          src={props.image}
         />
-      <Appointment  houseId = {props.houseId} />
-      <button
+		<div className="flex">
+			<div className="leftItems">
+        <h1>
+			{props.area}<br /> 
+			£{props.price}<br /> 
+			{props.type}   
+			</h1>
+			</div>
+			<div className="rightItems">
+        <Appointment houseId={props.houseId} />
+        <button
           onClick={() => {
             setView(false);
           }}
         >
           Hide
         </button>
-    </div>
-    ); 
-} return (
-<button onClick={()=>{setView(true)}}>Show</button>
-)
+		</div>
+		</div>
+      </div>
+    );
+  } return (
+    <button className='show' onClick={() => { setView(true) }}>Show</button>
+  )
 }
 export default Tile;
 
