@@ -14,18 +14,12 @@ ul {
     float: left;
   }
   
-  li a {
+  li  {
     display: block;
     color: #f1edee;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #8aa29e;
-  }
-  
-  .active {
-    background-color: #db5461;
+    font-size: 30px;
+    font-weight: 500;
   }
