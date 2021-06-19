@@ -45,6 +45,7 @@ function Appointment(props) {
                 <label>Notes/comments:</label><br />
                     <textarea id={`msg-${props.houseId}`} rows="5" cols="40" ></textarea><br />
                 <button onClick={() => { setIsFormOpen(false); setIsBooked(true); sendSMS()}}>Submit</button>
+                <button onClick={() => setIsFormOpen(false)}>Close</button>
             </div>
         );
     }

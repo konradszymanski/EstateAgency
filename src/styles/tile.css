@@ -41,6 +41,10 @@ text-align: left;
   border-radius: 20px;
   z-index: 999;
 }
+.requestForm label{
+  color: white;
+  padding: 4px;
+}
 label{
   padding: 4px;
 }

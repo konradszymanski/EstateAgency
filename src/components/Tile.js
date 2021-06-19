@@ -11,25 +11,25 @@ function Tile(props) {
           alt=''
           src={props.image}
         />
-		<div className="flex">
-			<div className="leftItems">
-        <h1>
-			{props.area}<br /> 
-			£{props.price}<br /> 
-			{props.type}   
-			</h1>
-			</div>
-			<div className="rightItems">
-        <Appointment houseId={props.houseId} />
-        <button
-          onClick={() => {
-            setView(false);
-          }}
-        >
-          Hide
-        </button>
-		</div>
-		</div>
+        <div className="flex">
+          <div className="leftItems">
+            <h1>
+              {props.area}<br />
+              £{props.price}<br />
+              {props.type}
+            </h1>
+          </div>
+          <div className="rightItems">
+            <Appointment houseId={props.houseId} />
+            <button
+              onClick={() => {
+                setView(false);
+              }}
+            >
+              Hide
+            </button>
+          </div>
+        </div>
       </div>
     );
   } return (
