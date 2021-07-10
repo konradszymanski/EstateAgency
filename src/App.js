@@ -15,7 +15,7 @@ import Navigation from './components/Navigation';
 
 function App() {
   
-let server="http://localhost:3001"
+let server="https://estateagencyapi.herokuapp.com"
 const [houses, fillHouses] = useState([]);
 
   useEffect(()=>{
@@ -26,7 +26,7 @@ const [houses, fillHouses] = useState([]);
     }
     fetchHouses()
   }    
-  ,[])
+  ,[server])
   
   return (
   
