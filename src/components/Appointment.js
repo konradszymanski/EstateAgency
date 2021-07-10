@@ -26,7 +26,8 @@ function Appointment(props) {
                      'Accept': 'application/json', 'Content-Type': 'application/json' 
                 }                
             })
-            let result = await response.json()
+            //let result = 
+            await response.json()
         }
         doSMS()
     }
@@ -50,6 +51,7 @@ function Appointment(props) {
         );
     }
     return (
+       
         <button onClick={() => setIsFormOpen(true)}>{isBooked ? "Booked" : "Request viewing"}</button>
     )
 }

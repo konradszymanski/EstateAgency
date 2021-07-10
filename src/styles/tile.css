@@ -56,6 +56,11 @@ button{
   color: black;
   transition: all .5s;
 }
+.hide,
+.show{
+  max-width: 150px;
+  max-height: 50px;
+}
 button:hover{
   background-color: #3d5467;
   color: white;
