@@ -1,5 +1,5 @@
 # Estate Agancy full stack app
-## The app is created in Node JS & React JS\
+### The app is created in Node JS & React JS
 \
 [Go to estate agency](https://estateagencyapi.herokuapp.com/houses)
 \
