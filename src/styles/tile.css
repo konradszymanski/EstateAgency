@@ -39,11 +39,17 @@ text-align: left;
   text-align: center;
   background: gray;
   border-radius: 20px;
-  z-index: 999;
+  z-index: 99;
+  position: relative;
+  right: 55%;
+  max-width: 280px;
 }
 .requestForm label{
   color: white;
   padding: 4px;
+}
+textarea{
+  max-width: 90%;
 }
 label{
   padding: 4px;

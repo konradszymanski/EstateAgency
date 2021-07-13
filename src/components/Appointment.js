@@ -43,7 +43,7 @@ function Appointment(props) {
                     <input required id={`tel-${props.houseId}`} type='number'></input><br />
                 <label>Customer Name:</label>
                     <input required id={`name-${props.houseId}`} type='text'></input><br />
-                <label>Notes/comments:</label><br />
+                <label className='textArea'>Notes/comments:</label><br />
                     <textarea id={`msg-${props.houseId}`} rows="5" cols="40" ></textarea><br />
                 <button onClick={() => { setIsFormOpen(false); setIsBooked(true); sendSMS()}}>Submit</button>
                 <button onClick={() => setIsFormOpen(false)}>Close</button>
