@@ -7,6 +7,7 @@ function Appointment(props) {
     const [startDate, setStartDate] = useState(new Date());
     const [isOpen, setIsFormOpen] = useState(false);
     const [isBooked, setIsBooked] = useState(false);
+    
     const sendSMS = () => {
         async function doSMS() {
             let payload={ 
@@ -31,7 +32,11 @@ function Appointment(props) {
         }
         doSMS()
     }
+    // const hideHeader =()=>{
+    //     document.getElementById().style.display = "none";
+    // }
     if (isOpen) {
+     //  hideHeader()
         return (
             <div className='requestForm'>
                 <label>Preferred date:</label><DatePicker id={`datePicker-${props.houseId}`} selected={startDate} onChange={date => setStartDate(date)} required /><br />
@@ -45,13 +50,15 @@ function Appointment(props) {
                     <input required id={`name-${props.houseId}`} type='text'></input><br />
                 <label className='textArea'>Notes/comments:</label><br />
                     <textarea id={`msg-${props.houseId}`} rows="5" cols="40" ></textarea><br />
-                <button onClick={() => { setIsFormOpen(false); setIsBooked(true); sendSMS()}}>Submit</button>
+                <button onClick={() => { setIsFormOpen(false); setIsBooked(true); sendSMS() }}>Submit</button>
                 <button onClick={() => setIsFormOpen(false)}>Close</button>
             </div>
         );
+    } 
+    else {
+      //document.getElementById().style.display = "flex"
     }
     return (
-       
         <button onClick={() => setIsFormOpen(true)}>{isBooked ? "Booked" : "Request viewing"}</button>
     )
 }

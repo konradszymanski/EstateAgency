@@ -40,8 +40,8 @@ text-align: left;
   background: gray;
   border-radius: 20px;
   z-index: 99;
-  position: relative;
-  right: 55%;
+  /* position: relative;
+  right: 55%; */
   max-width: 280px;
 }
 .requestForm label{

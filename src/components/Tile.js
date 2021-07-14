@@ -1,8 +1,14 @@
 import Appointment from './Appointment.js'
 import React, { useState } from "react";
 
-
-
+let headers = document.getElementsByTagName('h1');
+const addId = () =>{
+	for(let i=0; i < headers.length; i++) 
+          {
+			headers[i].setAttribute("id", "header"+i)
+          }
+		}
+		addId()
 function Tile(props) {
 //	const [isOpen, setIsFormOpen] = useState(false);
  
