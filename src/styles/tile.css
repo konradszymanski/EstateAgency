@@ -71,3 +71,6 @@ button:hover{
   background-color: #3d5467;
   color: white;
 }
+.hideHeader{
+  display: none;
+}

@@ -32,11 +32,7 @@ function Appointment(props) {
         }
         doSMS()
     }
-    // const hideHeader =()=>{
-    //     document.getElementById().style.display = "none";
-    // }
     if (isOpen) {
-     //  hideHeader()
         return (
             <div className='requestForm'>
                 <label>Preferred date:</label><DatePicker id={`datePicker-${props.houseId}`} selected={startDate} onChange={date => setStartDate(date)} required /><br />
@@ -51,15 +47,12 @@ function Appointment(props) {
                 <label className='textArea'>Notes/comments:</label><br />
                     <textarea id={`msg-${props.houseId}`} rows="5" cols="40" ></textarea><br />
                 <button onClick={() => { setIsFormOpen(false); setIsBooked(true); sendSMS() }}>Submit</button>
-                <button onClick={() => setIsFormOpen(false)}>Close</button>
+                <button onClick={() => {setIsFormOpen(false);  props.setH1(true)  }}>Close</button>
             </div>
         );
     } 
-    else {
-      //document.getElementById().style.display = "flex"
-    }
     return (
-        <button onClick={() => setIsFormOpen(true)}>{isBooked ? "Booked" : "Request viewing"}</button>
+    <button onClick={() => {setIsFormOpen(true); props.setH1(false) }}>{isBooked ? "Booked" : "Request viewing"}  </button>
     )
 }
 export default Appointment;
