@@ -2,6 +2,7 @@ import './styles/App.css';
 import './styles/navigation.css'
 import './styles/tile.css'
 import Tile from './components/Tile';
+import Intro from './components/Intro';
 // import Filter from './components/Filter';
 
 import React, { useEffect, useState } from "react";
@@ -26,6 +27,7 @@ const [houses, fillHouses] = useState([]);
   
     <div className="App">
       <Navigation />
+      <Intro />
       {/* <Filter /> */}
       <header className="App-header">
       {houses.map(
